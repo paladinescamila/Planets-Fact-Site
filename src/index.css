@@ -19,6 +19,15 @@
 		--color-amber-400: #eda249;
 		--color-blue-600: #2d68f0;
 		--color-sky-400: #419ebb;
+
+		--color-mercury: var(--color-sky-400);
+		--color-venus: var(--color-amber-400);
+		--color-earth: var(--color-purple-600);
+		--color-mars: var(--color-orange-600);
+		--color-jupiter: var(--color-red-500);
+		--color-saturn: var(--color-bronze-700);
+		--color-uranus: var(--color-teal-400);
+		--color-neptune: var(--color-blue-600);
 	}
 }
 
