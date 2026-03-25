@@ -2,8 +2,8 @@ import {useEffect, useRef, useState} from 'react';
 import {Link} from 'react-router-dom';
 import {PLANETS} from '../constants/planets';
 import {PLANETS_BG_COLORS} from '../constants/planets-styles';
-import ChevronIcon from '../assets/icon-chevron.svg';
-import BurgerIcon from '../assets/icon-hamburger.svg';
+import ChevronIcon from '../assets/img/icon-chevron.svg';
+import BurgerIcon from '../assets/img/icon-hamburger.svg';
 
 export default function Header() {
 	const [headerHeight, setHeaderHeight] = useState<number>(0);

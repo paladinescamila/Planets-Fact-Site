@@ -1,34 +1,34 @@
-import MercuryOverview from '../assets/planet-mercury.svg';
-import MercuryStructure from '../assets/planet-mercury-internal.svg';
-import MercuryGeology from '../assets/geology-mercury.png';
+import MercuryOverview from '../assets/img/planet-mercury.svg';
+import MercuryStructure from '../assets/img/planet-mercury-internal.svg';
+import MercuryGeology from '../assets/img/geology-mercury.png';
 
-import VenusOverview from '../assets/planet-venus.svg';
-import VenusStructure from '../assets/planet-venus-internal.svg';
-import VenusGeology from '../assets/geology-venus.png';
+import VenusOverview from '../assets/img/planet-venus.svg';
+import VenusStructure from '../assets/img/planet-venus-internal.svg';
+import VenusGeology from '../assets/img/geology-venus.png';
 
-import EarthOverview from '../assets/planet-earth.svg';
-import EarthStructure from '../assets/planet-earth-internal.svg';
-import EarthGeology from '../assets/geology-earth.png';
+import EarthOverview from '../assets/img/planet-earth.svg';
+import EarthStructure from '../assets/img/planet-earth-internal.svg';
+import EarthGeology from '../assets/img/geology-earth.png';
 
-import MarsOverview from '../assets/planet-mars.svg';
-import MarsStructure from '../assets/planet-mars-internal.svg';
-import MarsGeology from '../assets/geology-mars.png';
+import MarsOverview from '../assets/img/planet-mars.svg';
+import MarsStructure from '../assets/img/planet-mars-internal.svg';
+import MarsGeology from '../assets/img/geology-mars.png';
 
-import JupiterOverview from '../assets/planet-jupiter.svg';
-import JupiterStructure from '../assets/planet-jupiter-internal.svg';
-import JupiterGeology from '../assets/geology-jupiter.png';
+import JupiterOverview from '../assets/img/planet-jupiter.svg';
+import JupiterStructure from '../assets/img/planet-jupiter-internal.svg';
+import JupiterGeology from '../assets/img/geology-jupiter.png';
 
-import SaturnOverview from '../assets/planet-saturn.svg';
-import SaturnStructure from '../assets/planet-saturn-internal.svg';
-import SaturnGeology from '../assets/geology-saturn.png';
+import SaturnOverview from '../assets/img/planet-saturn.svg';
+import SaturnStructure from '../assets/img/planet-saturn-internal.svg';
+import SaturnGeology from '../assets/img/geology-saturn.png';
 
-import UranusOverview from '../assets/planet-uranus.svg';
-import UranusStructure from '../assets/planet-uranus-internal.svg';
-import UranusGeology from '../assets/geology-uranus.png';
+import UranusOverview from '../assets/img/planet-uranus.svg';
+import UranusStructure from '../assets/img/planet-uranus-internal.svg';
+import UranusGeology from '../assets/img/geology-uranus.png';
 
-import NeptuneOverview from '../assets/planet-neptune.svg';
-import NeptuneStructure from '../assets/planet-neptune-internal.svg';
-import NeptuneGeology from '../assets/geology-neptune.png';
+import NeptuneOverview from '../assets/img/planet-neptune.svg';
+import NeptuneStructure from '../assets/img/planet-neptune-internal.svg';
+import NeptuneGeology from '../assets/img/geology-neptune.png';
 
 export const PLANETS_IMAGES: Record<PlanetID, ModesMap<string>> = {
 	mercury: {overview: MercuryOverview, structure: MercuryStructure, geology: MercuryGeology},

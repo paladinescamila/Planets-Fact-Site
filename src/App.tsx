@@ -2,7 +2,7 @@ import {Routes, Route, Navigate} from 'react-router-dom';
 import Header from './components/Header';
 import PlanetInfo from './components/PlanetInfo';
 import {PLANETS} from './constants/planets';
-import BackgroundStarsImage from './assets/background-stars.svg';
+import BackgroundStarsImage from './assets/img/background-stars.svg';
 
 function App() {
 	return (

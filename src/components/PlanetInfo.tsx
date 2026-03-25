@@ -4,7 +4,7 @@ import {PLANETS_IMAGES} from '../constants/planets-images';
 import {PLANETS_BY_ID} from '../constants/planets';
 import StatCard from './StatCard';
 import ModeCard from './ModeCard';
-import SourceIcon from '../assets/icon-source.svg';
+import SourceIcon from '../assets/img/icon-source.svg';
 import MobileModeItem from './MobileModeItem';
 import {PLANETS_SIZES} from '../constants/planets-styles';
 import {STEPS} from '../constants/steps';
