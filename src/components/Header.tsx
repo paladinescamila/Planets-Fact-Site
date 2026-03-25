@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom';
 import {PLANETS} from '../constants/planets';
 import {PLANETS_BG_COLORS} from '../constants/planets-styles';
 
@@ -11,11 +12,11 @@ export default function Header() {
 				<ul className='hidden md:flex flex-row gap-10 items-center'>
 					{PLANETS.map((planet) => (
 						<li key={planet.id} className='relative group'>
-							<a
-								href={`#${planet.id}`}
+							<Link
+								to={`/${planet.id}`}
 								className='text-preset-10-bold text-neutral-0 uppercase opacity-75'>
 								{planet.name}
-							</a>
+							</Link>
 							<span
 								className={`absolute left-0 right-0 -top-7 h-1 ${PLANETS_BG_COLORS[planet.id]} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
 							/>

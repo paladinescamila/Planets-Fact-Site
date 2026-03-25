@@ -1,12 +1,19 @@
 import {useState} from 'react';
+import {useParams, Navigate} from 'react-router-dom';
 import {PLANETS_IMAGES} from '../constants/planets-images';
+import {PLANETS_BY_ID} from '../constants/planets';
 import StatCard from './StatCard';
 import ModeCard from './ModeCard';
 import SourceIcon from '../assets/icon-source.svg';
 import MobileModeItem from './MobileModeItem';
 
-export default function PlanetInfo({planet}: {planet: Planet}) {
+export default function PlanetInfo() {
+	const {planetID} = useParams<{planetID: PlanetID}>();
+	const planet = PLANETS_BY_ID[planetID!];
+
 	const [mode, setMode] = useState<Mode>('overview');
+
+	if (!planet) return <Navigate to='/earth' replace />;
 
 	return (
 		<main className='z-10 px-10'>
