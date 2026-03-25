@@ -13,7 +13,7 @@ export default function MobileModeItem({
 	planetID: PlanetID;
 }) {
 	return (
-		<li onClick={() => setMode(mode)} className='relative group'>
+		<li onClick={() => setMode(mode)} className='relative group cursor-pointer'>
 			<p className='text-preset-11 text-neutral-0 uppercase'>
 				{STEPS_BY_MODE[mode].mobileLabel}
 			</p>

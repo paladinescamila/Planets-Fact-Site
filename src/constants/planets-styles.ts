@@ -30,3 +30,14 @@ export const PLANETS_BORDER_COLORS: Record<PlanetID, string> = {
 	uranus: 'border-uranus',
 	neptune: 'border-neptune',
 };
+
+export const PLANETS_SIZES: Record<PlanetID, string> = {
+	mercury: 'w-[110px] h-[110px] md:w-[184px] md:h-[184px] xl:w-[290px]  xl:h-[290px]',
+	venus: 'w-[154px] h-[154px] md:w-[253px] md:h-[253px] xl:w-[400px]  xl:h-[400px]',
+	earth: 'w-[173px] h-[173px] md:w-[285px] md:h-[285px] xl:w-[450px]  xl:h-[450px]',
+	mars: 'w-[129px] h-[129px] md:w-[213px] md:h-[213px] xl:w-[336px]  xl:h-[336px]',
+	jupiter: 'w-[224px] h-[224px] md:w-[369px] md:h-[369px] xl:w-[582px]  xl:h-[582px]',
+	saturn: 'w-[256px] h-[256px] md:w-[422px] md:h-[422px] xl:w-[666px]  xl:h-[666px]',
+	uranus: 'w-[176px] h-[176px] md:w-[290px] md:h-[290px] xl:w-[458px]  xl:h-[458px]',
+	neptune: 'w-[173px] h-[173px] md:w-[285px] md:h-[285px] xl:w-[450px]  xl:h-[450px]',
+};

@@ -6,6 +6,8 @@ import StatCard from './StatCard';
 import ModeCard from './ModeCard';
 import SourceIcon from '../assets/icon-source.svg';
 import MobileModeItem from './MobileModeItem';
+import {PLANETS_SIZES} from '../constants/planets-styles';
+import {STEPS} from '../constants/steps';
 
 export default function PlanetInfo() {
 	const {planetID} = useParams<{planetID: PlanetID}>();
@@ -16,34 +18,24 @@ export default function PlanetInfo() {
 	if (!planet) return <Navigate to='/earth' replace />;
 
 	return (
-		<main className='z-10 px-10'>
-			<article id='mercury' className='flex flex-col items-center'>
+		<main className='z-10 flex-1 flex flex-col'>
+			<article id={planetID} className='flex flex-col items-center w-full flex-1'>
 				<section
 					aria-labelledby='planet-heading'
-					className='flex flex-col lg:flex-row items-center justify-center gap-32.5 xl:gap-75'>
+					className='flex flex-col lg:flex-row items-center w-full flex-1'>
 					<nav className='flex md:hidden w-full'>
-						<ul className='flex flex-row gap-2 justify-between w-full pt-5 border-b border-b-neutral-0/20'>
-							<MobileModeItem
-								mode='overview'
-								setMode={setMode}
-								isSelected={mode === 'overview'}
-								planetID={planet.id}
-							/>
-							<MobileModeItem
-								mode='structure'
-								setMode={setMode}
-								isSelected={mode === 'structure'}
-								planetID={planet.id}
-							/>
-							<MobileModeItem
-								mode='geology'
-								setMode={setMode}
-								isSelected={mode === 'geology'}
-								planetID={planet.id}
-							/>
+						<ul className='flex flex-row gap-2 justify-between w-full pt-5 border-b border-b-neutral-0/20 px-5'>
+							{STEPS.map((step) => (
+								<MobileModeItem
+									mode={step.mode}
+									setMode={setMode}
+									isSelected={mode === step.mode}
+									planetID={planet.id}
+								/>
+							))}
 						</ul>
 					</nav>
-					<figure className='relative'>
+					<figure className='relative flex-1 flex flex-col items-center justify-center px-4 md:px-10'>
 						<img
 							src={
 								mode === 'structure'
@@ -51,18 +43,18 @@ export default function PlanetInfo() {
 									: PLANETS_IMAGES[planet.id].overview
 							}
 							alt={`Illustration of ${planet.name} in ${mode} mode`}
-							className='w-27.75 h-27.75 md:w-46 md:h-46 lg:w-72.5 lg:h-72.5'
+							className={PLANETS_SIZES[planet.id]}
 						/>
 						{mode === 'geology' && (
 							<img
 								src={PLANETS_IMAGES[planet.id].geology}
 								alt={`Illustration of ${planet.name} in ${mode} mode`}
-								className='h-25 md:h-37.5 lg:h-50 absolute top-21 md:top-36 lg:top-56.5 left-1/2 -translate-x-1/2 pointer-events-none'
+								className='h-25 md:h-37.5 lg:h-50 absolute -bottom-6 md:-bottom-10 lg:-bottom-16 left-1/2 -translate-x-1/2 pointer-events-none'
 							/>
 						)}
 					</figure>
 
-					<div className='flex flex-row lg:flex-col gap-17.5 lg:gap-10 w-full lg:w-87.5 pt-24.5 pb-7 md:pt-32.5 md:pb-6.75 lg:pt-21.5 lg:pb-31.75'>
+					<div className='flex flex-row lg:flex-col gap-17.5 lg:gap-10 w-full lg:w-87.5 mr-0 lg:mr-41.25 px-4 md:px-10'>
 						<div className='flex flex-col gap-4 md:gap-6 text-center md:text-left'>
 							<h1
 								id='planet-heading'
@@ -87,30 +79,20 @@ export default function PlanetInfo() {
 						<nav
 							aria-label='Information categories'
 							className='hidden md:flex flex-col gap-4'>
-							<ModeCard
-								mode='overview'
-								isSelected={mode === 'overview'}
-								planetID={planet.id}
-								setMode={setMode}
-							/>
-							<ModeCard
-								mode='structure'
-								isSelected={mode === 'structure'}
-								planetID={planet.id}
-								setMode={setMode}
-							/>
-							<ModeCard
-								mode='geology'
-								isSelected={mode === 'geology'}
-								planetID={planet.id}
-								setMode={setMode}
-							/>
+							{STEPS.map((step) => (
+								<ModeCard
+									mode={step.mode}
+									isSelected={mode === step.mode}
+									planetID={planet.id}
+									setMode={setMode}
+								/>
+							))}
 						</nav>
 					</div>
 				</section>
 
-				<section aria-label='Mercury Statistics' className='w-full'>
-					<dl className='flex flex-col md:flex-row justify-center gap-2 md:gap-2.5 xl:gap-7.5'>
+				<section aria-label='Mercury Statistics' className='w-full pb-12 md:pb-9 lg:pb-14'>
+					<dl className='flex flex-col md:flex-row justify-center gap-2 md:gap-2.5 xl:gap-7.5 px-4 md:px-10'>
 						<StatCard label='Rotation time' value={planet.rotation} />
 						<StatCard label='Revolution time' value={planet.revolution} />
 						<StatCard label='Radius' value={planet.radius} />
