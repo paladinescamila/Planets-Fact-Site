@@ -19,7 +19,7 @@ export default function PlanetInfo() {
 
 	return (
 		<main className='z-10 flex-1 flex flex-col'>
-			<article id={planetID} className='flex flex-col items-center w-full flex-1'>
+			<article id={planetID} className='flex flex-col items-center w-full flex-1 gap-6'>
 				<section
 					aria-labelledby='planet-heading'
 					className='flex flex-col lg:flex-row items-center w-full flex-1'>

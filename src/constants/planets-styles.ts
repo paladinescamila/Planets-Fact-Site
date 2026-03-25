@@ -1,12 +1,12 @@
 export const PLANETS_STYLES: Record<PlanetID, string> = {
-	mercury: 'bg-mercury border-mercury',
-	venus: 'bg-venus border-venus',
-	earth: 'bg-earth border-earth',
-	mars: 'bg-mars border-mars',
-	jupiter: 'bg-jupiter border-jupiter',
-	saturn: 'bg-saturn border-saturn',
-	uranus: 'bg-uranus border-uranus',
-	neptune: 'bg-neptune border-neptune',
+	mercury: 'bg-mercury border-mercury hover:bg-mercury hover:border-mercury',
+	venus: 'bg-venus border-venus hover:bg-venus hover:border-venus',
+	earth: 'bg-earth border-earth hover:bg-earth hover:border-earth',
+	mars: 'bg-mars border-mars hover:bg-mars hover:border-mars',
+	jupiter: 'bg-jupiter border-jupiter hover:bg-jupiter hover:border-jupiter',
+	saturn: 'bg-saturn border-saturn hover:bg-saturn hover:border-saturn',
+	uranus: 'bg-uranus border-uranus hover:bg-uranus hover:border-uranus',
+	neptune: 'bg-neptune border-neptune hover:bg-neptune hover:border-neptune',
 };
 
 export const PLANETS_BG_COLORS: Record<PlanetID, string> = {
