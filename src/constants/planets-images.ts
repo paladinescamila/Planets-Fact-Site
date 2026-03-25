@@ -30,10 +30,7 @@ import NeptuneOverview from '../assets/planet-neptune.svg';
 import NeptuneStructure from '../assets/planet-neptune-internal.svg';
 import NeptuneGeology from '../assets/geology-neptune.png';
 
-export const PLANETS_IMAGES: Record<
-	PlanetID,
-	{overview: string; structure: string; geology: string}
-> = {
+export const PLANETS_IMAGES: Record<PlanetID, ModesMap<string>> = {
 	mercury: {overview: MercuryOverview, structure: MercuryStructure, geology: MercuryGeology},
 	venus: {overview: VenusOverview, structure: VenusStructure, geology: VenusGeology},
 	earth: {overview: EarthOverview, structure: EarthStructure, geology: EarthGeology},
