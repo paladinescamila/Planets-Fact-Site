@@ -21,12 +21,12 @@ export default function PlanetInfo() {
 		<main className='z-10 flex-1 flex flex-col'>
 			<article
 				id={planetID}
-				className='flex flex-col items-center w-full flex-1 gap-6 py-12 md:py-9 lg:py-14'>
+				className='flex flex-col items-center w-full flex-1 gap-6 pt-0 pb-12 md:py-9 lg:py-14'>
 				<section
 					aria-labelledby='planet-heading'
 					className='flex flex-col lg:flex-row items-center w-full flex-1 lg:pr-41.25 gap-y-6 md:gap-y-5'>
 					<nav className='flex md:hidden w-full'>
-						<ul className='flex flex-row gap-2 justify-between w-full pt-5 border-b border-b-neutral-0/20 px-5'>
+						<ul className='flex flex-row gap-2 justify-between w-full pt-5 px-5 border-b border-b-neutral-0/20'>
 							{STEPS.map((step) => (
 								<MobileModeItem
 									mode={step.mode}
