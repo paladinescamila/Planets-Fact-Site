@@ -37,7 +37,7 @@ export default function PlanetInfo() {
 							))}
 						</ul>
 					</nav>
-					<figure className='relative flex-1 flex flex-col items-center justify-center px-4 md:px-10'>
+					<figure className='relative flex-1 flex flex-col items-center justify-center px-4 md:px-10 min-h-40 md:min-h-0'>
 						<img
 							src={
 								mode === 'structure'
@@ -51,7 +51,7 @@ export default function PlanetInfo() {
 							<img
 								src={PLANETS_IMAGES[planet.id].geology}
 								alt={`Illustration of ${planet.name} in ${mode} mode`}
-								className='h-25 md:h-37.5 xl:h-50 absolute top-3/5 left-1/2 -translate-x-1/2 pointer-events-none'
+								className='h-25 md:h-37.5 xl:h-50 absolute top-1/2 md:top-3/5 left-1/2 -translate-x-1/2 pointer-events-none'
 							/>
 						)}
 					</figure>
