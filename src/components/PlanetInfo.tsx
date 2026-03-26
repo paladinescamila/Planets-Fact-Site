@@ -22,7 +22,7 @@ export default function PlanetInfo() {
 			<article id={planetID} className='flex flex-col items-center w-full flex-1 gap-6'>
 				<section
 					aria-labelledby='planet-heading'
-					className='flex flex-col lg:flex-row w-full flex-1 lg:pr-41.25 gap-y-6 md:gap-y-5'>
+					className='flex flex-col lg:flex-row items-center w-full flex-1 lg:pr-41.25 gap-y-6 md:gap-y-5'>
 					<nav className='flex md:hidden w-full'>
 						<ul className='flex flex-row gap-2 justify-between w-full pt-5 border-b border-b-neutral-0/20 px-5'>
 							{STEPS.map((step) => (
@@ -35,7 +35,7 @@ export default function PlanetInfo() {
 							))}
 						</ul>
 					</nav>
-					<figure className='relative flex-1 flex flex-col items-center justify-center px-4 md:px-10 md:pt-6'>
+					<figure className='relative flex-1 flex flex-col items-center justify-center px-4 md:px-10'>
 						<img
 							src={
 								mode === 'structure'
@@ -54,7 +54,7 @@ export default function PlanetInfo() {
 						)}
 					</figure>
 
-					<div className='flex flex-row lg:flex-col gap-17.5 lg:gap-10 w-full lg:w-87.5 px-4 md:px-10 lg:px-0 self-end md:pb-15'>
+					<div className='flex flex-row lg:flex-col gap-17.5 lg:gap-10 w-full lg:w-87.5 px-4 md:px-10 lg:px-0'>
 						<div className='flex flex-col gap-4 md:gap-6 text-center md:text-left'>
 							<h1
 								id='planet-heading'
