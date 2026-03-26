@@ -23,7 +23,7 @@ export default function Header() {
 	};
 
 	return (
-		<header className='z-50'>
+		<header className='z-50 sticky top-0 bg-navy-950'>
 			<nav
 				aria-label='Main Planet Navigation'
 				className='flex flex-row md:flex-col lg:flex-row justify-between items-center gap-8 px-6 md:px-10 py-4 lg:px-8 md:py-8 lg:py-6 border-b border-b-neutral-0/20'

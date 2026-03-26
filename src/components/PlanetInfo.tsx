@@ -19,7 +19,9 @@ export default function PlanetInfo() {
 
 	return (
 		<main className='z-10 flex-1 flex flex-col'>
-			<article id={planetID} className='flex flex-col items-center w-full flex-1 gap-6'>
+			<article
+				id={planetID}
+				className='flex flex-col items-center w-full flex-1 gap-6 py-12 md:py-9 lg:py-14'>
 				<section
 					aria-labelledby='planet-heading'
 					className='flex flex-col lg:flex-row items-center w-full flex-1 lg:pr-41.25 gap-y-6 md:gap-y-5'>
@@ -91,7 +93,7 @@ export default function PlanetInfo() {
 					</div>
 				</section>
 
-				<section aria-label='Mercury Statistics' className='w-full pb-12 md:pb-9 lg:pb-14'>
+				<section aria-label='Mercury Statistics' className='w-full'>
 					<dl className='flex flex-col md:flex-row justify-center gap-2 md:gap-2.5 xl:gap-7.5 px-4 md:px-10'>
 						<StatCard label='Rotation time' value={planet.rotation} />
 						<StatCard label='Revolution time' value={planet.revolution} />
