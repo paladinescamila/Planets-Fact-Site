@@ -6,7 +6,7 @@ This is a solution to the [Planets fact site challenge on Frontend Mentor](https
 
 ## Links
 
-- [Solution]()
+- [Solution](https://www.frontendmentor.io/solutions/planets-fact-site-1GS20id1c_)
 - [Live Site](https://planets-paladinescamila.netlify.app)
 
 ## Built with
